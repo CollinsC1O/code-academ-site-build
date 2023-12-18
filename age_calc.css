@@ -1,0 +1,148 @@
+*{
+    margin: 0px;
+    padding: 0 auto;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* text-align: center; */
+    background: url(/Random/age-calc-img/spiral_stairs.jpg); 
+    min-height: 100px;
+    
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    /* align-items: center; */
+    background-color: #f1eaea;
+    margin-top: 60px;
+    width: 450px;
+    height: 100%;
+    border-bottom-right-radius: 100px;
+    /* box-shadow: 0px 0px 12px 0px; */
+    padding-left: 30px;
+    padding-top: 30px;
+    padding-bottom: 20px;
+    padding-left: 10px;
+
+}
+.inputter{
+    display: flex;
+    /* justify-content: space-around; */
+    /* text-align: center; */
+    font-weight: bold;
+    /* padding-top: 30px; */
+}
+
+.iput-day{
+    display: flex;
+    flex-direction: column;
+    font-size: 25px;
+    font-weight: bold;
+    
+}
+
+.input-month{
+    display: flex;
+    flex-direction: column;
+    font-size: 25px;
+    font-weight: bold;
+    
+}
+
+.input-year{
+    display: flex;
+    flex-direction: column;
+    font-size: 25px;
+}
+
+input{
+    width: 60px;
+    height: 40px;
+}
+
+#day{
+    margin-right: 20px;
+    border: 2px solid gray;
+}
+
+#month{
+    width: 70px;
+    margin-right: 20px;
+    border: 2px solid gray;
+}
+
+#year{
+    width: 80px;
+    margin-left: 0px;
+    border: 2px solid gray;
+}
+
+.icon{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.Calculate{
+    width: 100%;
+    font-size: 20px;
+}
+
+.age-edit, .month-edit, .day-edit{
+    font-size: 70px;
+}
+
+span{
+    color: rgb(146, 7, 238);
+    align-content: baseline;
+}
+
+.hr{
+    width: 370px;
+    margin-top: 13px;
+}
+
+.line-arror {
+    display: flex;
+    margin-top: 30px;
+}
+
+.icon button {
+    background-color: rgb(146, 7, 238);
+    width: fit-content;
+    border-radius: 40px;
+    border: none;
+}
+
+.back{
+    margin-top: 40px;
+}
+
+.back a{
+    text-decoration: none;
+}
+@media {
+    *{
+        margin: 0px;
+        padding: 0 auto;
+        box-sizing: border-box;
+    }
+    
+    body{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        /* text-align: center; */
+        background-color: rgb(235, 231, 231);
+        min-height: 100vh;
+        
+    }
+    
+}

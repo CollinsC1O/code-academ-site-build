@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Age Calculator</title>
+    <link rel="stylesheet" href="age_calc.css">
+</head>
+<body>
+    <div>
+        <span></span>
+    </div>
+
+    <main>
+        <!-- this contains the entire work -->
+        <div class="container">
+            <!-- this placeholder collects all the required user information -->
+            <div class="inputter">
+                <!-- this collects the day of birth -->
+                <div class="input-parent">
+                    <label for="day">Day</label>
+                    <input type="text" id="day" name="day" placeholder="DD">
+                    <span class="error-day"></span>
+                </div>
+
+                <!-- this collects the month of birth -->
+                <div class="input-parent">
+                    <label for="month">Month</label>
+                    <input type="text" id="month" name="month" placeholder="MM">
+                    <span class="error-month"></span>
+                </div>
+
+                <!-- this collects the year of birth -->
+                <div class="input-parent">
+                    <label for="year">Year</label>
+                    <input type="text" id="year" name="year" placeholder="YYYY">
+                    <span class="error-year"></span>
+                </div>
+            </div>
+
+            
+
+            <div class="line-arror">
+                
+                <div class="hr">
+                    <hr>
+                </div>
+
+                <!-- this buttun helps user to see their calculated age -->
+                <div class="icon">
+                    <button id="calc_btn">
+                        <img src="/Random/age-calc-img/icon-arrow.svg" alt="smile">
+                    </button>
+                </div>
+            </div>
+
+            <!-- this returns the user age, month and day -->
+            <div class="Calculate">
+                <h1><span class="age-edit">_ _</span>Years</h1>
+                <h1> <span class="month-edit">_ _</span>Month</h1>
+                <h1><span class="day-edit">_ _</span>Day</h1>
+            </div>
+            
+        </div>
+
+        <button class="back"><a href="project.html"><-- Back</a></button>
+    </main>
+    <script src="age_calc.js"></script>
+</body>
+</html>
