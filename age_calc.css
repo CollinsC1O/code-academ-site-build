@@ -127,6 +127,14 @@ span{
 .back a{
     text-decoration: none;
 }
+
+.back {
+    font-size: 20px;
+}
+
+.back:hover {
+    font-size: 25px;
+}
 @media {
     *{
         margin: 0px;

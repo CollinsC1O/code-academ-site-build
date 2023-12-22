@@ -4,10 +4,16 @@
     box-sizing: border-box;
 }
 
+body, html{
+    margin: 0px;
+    padding: 0px;
+}
+
 body {
     display: flex;
     flex-direction: column;
     width: 100%;
+
 }
 
 .wrapper {
@@ -23,12 +29,14 @@ body {
 .nav-bar {
     display: flex;
     background-color: rgb(24, 24, 24);
-    position: fixed;
+    top: 0;
     padding-bottom: 0px;
-    /* z-index: -1; */
     margin-top: 0px;
     margin: 0px;
     width: 100%;
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
 }
 
 .logo {
@@ -37,47 +45,97 @@ body {
     background-color: black;
     width: 250px;
     align-items: center;
+    
 }
 
 .logoz {
-    width: 150px;
-    padding-left: 50p;
-    padding-left: 50px;
+    width: 250px;
+    padding-left: 0px;
+    height: 100px;
 }
+
 
 .nar-links {
     text-decoration: none;
     list-style: none;
     display: flex;
-    padding-left: 500px;
-    padding-top: 40px;
+    padding-left: 300px;
+    padding-top: 30px;
+    position: fixed;
 
 }
 
-.nar-links:hover {
-    color: rgb(197, 15, 15);
+ a:hover {
+    color: rgba(255, 0, 0, 0.8);
+    /* font-size: 20px; */
 }
 
 li a {
-    padding-right: 60px;
-    font-size: 20px;
+    padding-right: 40px;
+    font-size: 18px;
     color: white;
     text-decoration: none;
-    margin-right: 10px;
+    margin-right: 0px;
 }
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+  /* position: relative;
+  display: inline-block; */
+  color: white;
+  font-size: 18px;
+  padding-right: 28px;
+  cursor: pointer;
+}
+
+.dropdown:hover {
+    color: rgba(255, 0, 0, 0.8);
+    /* font-size: 20px; */
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: black;
+  color: #fff;
+  min-width: 150px;
+  box-shadow: 0px 9px 9px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  color: white;
+  text-decoration: none;
+  display: block;
+  padding-left: 30px;
+}
+
+
+.dropdown-content a:hover {
+    background-color: black;
+}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
 
 .up {
     display: flex;
     flex-direction: column;
     width: 100%;
     height: 100vh;
-    background: rgba(0, 0, 0, 0.4) url(Random/img/3.jpg);
+    background: rgba(0, 0, 0, 0.6) url(/Random/img/fotis-fotopoulos-6sAl6aQ4OWI-unsplash.jpg);
     background-blend-mode: overlay;
     background-position: center;
     background-attachment: fixed;
     background-size: cover;
     justify-content: center;
     align-items: center;
+    margin-top: 0;
     
 }
 
@@ -86,8 +144,10 @@ li a {
     color: white;
     font-size: 64px;
     background: rgba(255, 0, 0, 0.8);
-    font-size: 64px;
+    font-size: 40px;
     border-radius: 10px;
+    text-align: center;
+    
 }
 
 .up-inner h2 {
@@ -98,7 +158,14 @@ li a {
     text-align: center;
 }
 
+.middle {
+    width: 100%;
+}
 
+.first-middle {
+    width: 100%;
+    position: fixed;
+}
 .first-middle h1 {
     font-size: 32px;
     border-left: 3px solid #000;
@@ -143,6 +210,8 @@ li a {
     
 }
 
+
+
 li {
     padding: 10px;
 }
@@ -164,6 +233,14 @@ li {
 .right-top > ul{
     list-style-type: none;
     margin-left: 5rem;
+}
+
+.right-top img {
+    height: 383px;
+}
+
+.right-btn {
+    margin-top: 70px;
 }
 
 .read-two {
@@ -192,12 +269,13 @@ li {
 
 .up-down {   
     display: flex;
-    margin: 40px; 
+    margin: 20px; 
 }
 
 .up-down img {
     width: 600px;
 }
+
 
 .third-top h2 {
     margin-top: 10px;
@@ -205,6 +283,7 @@ li {
 
 .third-top > img {
     margin-right: 50px;
+    height: 340px;
 }
 
 .third-top ul {
@@ -245,6 +324,10 @@ li {
     margin-left: 2rem;
 }
 
+.fourth-top img {
+    height: 340px;
+}
+
 .fourth-read {
     align-items: center;
     text-align: center;
@@ -259,7 +342,23 @@ li {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-top: 50px;
+    margin-top: 80px;
+    cursor: pointer;
+}
+
+#about:hover {
+    color: red;
+    font-size: 35px;
+}
+
+.how-to {
+    display: flex;
+    justify-content: center;
+    padding-top: 10px;
+}
+
+.watsapp img {
+    top: 0px;
 }
 
 .second-middle h1 {
@@ -268,13 +367,28 @@ li {
 
 .second-middle p {
     font-size: 25px;
-    font-style: italic;
     font-weight: large;
     margin-bottom: 20px;
     font-family: serif;
     text-align: center;
 }
 
+.first-read {
+    margin-top: 24px;
+}
+
+.contact {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.words {
+    font-size: 30px;
+}
+
+.watsapp {
+    margin-top: 20px;
+}
 .git {
     padding: 10px;
     font-size: larger;
@@ -288,15 +402,31 @@ footer {
     color: white;
     margin-left: 80px;
     margin-right: 80px;
+    display: flex;
+    flex-direction: column;
+    /* width: 100%; */
+    /* height: 100vh; */
+    background-blend-mode: overlay;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    padding-bottom: 80px;
 }
+
 
 .foot-but {
     display: flex;
+    margin: 0px;
+    margin-left: 0px;
 }
 
 .left-bottom {
-    margin: 40px;
-
+    margin-top: 40px;
+    margin-left: 0px;
+    padding-left: opx;
 }
 
 .left-bottom ul li{
@@ -304,10 +434,7 @@ footer {
     padding: 4px;
 }
 
-.left-bottom
-.right-bottom {
-    
-}
+
 
 .git a {
     text-decoration: none;
@@ -316,5 +443,41 @@ footer {
 
 .git a:hover{
     font-size: 25px;
-    cursor: help;
+    cursor: pointer;
 }
+
+
+.bottom-links {
+    padding-top: 30px;
+}
+
+.correct {
+    display: flex;
+    margin: 30px;
+}
+
+.right-bottom {
+    margin-left: 150px;
+    margin-top: 40px;
+}
+
+.socials a {
+    color: white;
+    text-decoration: none;
+    margin-top: 0px;
+}
+
+
+.socials img {
+    width: 30px;
+    top: 20px;
+}
+
+.up-down {
+    display: flex;
+}
+/* .say {
+    padding-top: 100px;
+    margin-bottom: 0px;
+} */
+
